@@ -15,7 +15,7 @@ type FetchResult struct {
 }
 
 func main() {
-	// informar CEP como argumento (e.g. go run 23013770)
+	// informar CEP como argumento (e.g. go run main.go 23013770)
 	cep := os.Args[1]
 	brasilApi := fmt.Sprintf("https://brasilapi.com.br/api/cep/v1/%s", cep)
 	viaCepApi := fmt.Sprintf("http://viacep.com.br/ws/%s/json/", cep)
